@@ -1,0 +1,13 @@
+---
+- name:
+  hosts: all
+  tasks:
+  gather_facts: no
+  vars:
+    - massage: "this is test massage"
+  tasks:
+    - name: print massage
+      debug:
+        msg: "{{ massage }}"  
+
+      

@@ -1,0 +1,13 @@
+---
+- name: conditional 1 playbook
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: ping servers
+      ping:
+      register: task1_result
+
+    - name: print OS information
+      debug:
+        msg: "{{ ansible_distribution }}"
+      when: task1_result is succeeded
