@@ -1,1 +1,4 @@
-# ansible_conditional_playbook
+## Purpose 
+## Structure
+## Usage
+## Contributors
